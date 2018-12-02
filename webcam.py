@@ -16,7 +16,7 @@ while(True):
     #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     #Canny --> edge detector
     #piu diminuisco gli edge piu ho instabilità
-    can = cv2.Canny(frame,50,20)
+    can = cv2.Canny(frame,100,200)
     
    
 #Display the resulting Frame

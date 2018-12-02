@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-filename1 ='scacchiera.jpg'
-filename2 = 'rot.jpg'
+filename1 ='Lena.jpg'
+filename2 = 'Lena.jpg'
 img1 = cv2.imread(filename1)
 img2 = cv2.imread(filename2)
 
@@ -42,7 +42,7 @@ for n1 in dst1:
                 print('True')
                 pixel1 = pixel1*10
                 pixel2 = pixel2*10
-                break
+                
             
 img1[dst1>0.08*dst1.max()]=[0,0,255]
 img2[dst2>0.08*dst2.max()]=[0,0,255]
